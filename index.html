@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral</title>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Floral <span class="fa fa-light fa-leaf"></span></a>
+                    <div class="d-lg-none d-flex align-items-center gap-3">
+                        <div class="d-lg-none mob-util d-flex justify-content-end gap-3">
+                            <span class="" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                <i class="fa fa-light fa-search"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-light fa-bell"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-light fa-shopping-cart"></i>
+                            </span>
+                            <span class="mob-icon">
+                                <img class="img-fluid img-rounded thumbnail" src="img/usr.png" alt="">
+                            </span>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <span class="fa-solid fa-ellipsis-vertical"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Plants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Vases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tools</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav-util d-flex items-center gap-2">
+                            <form class="d-flex " role="search">
+                                <input class="nav-search form-control me-2" type="search" placeholder="Search ..." aria-label="Search">
+                                <span class="search-icon mr-2">
+                                    <i class="fa fa-light fa-search"></i>
+                                </span>
+                            </form>
+                            <button class="rounded-full nav-note">
+                                <span class="fa fa-light fa-bell"></span>
+                            </button>
+                            <button class="nav-cart">
+                                <span class="fa fa-light fa-shopping-cart"></span>
+                            </button>
+                            <button class="rounded-full user-icon">
+                                <img class="img-fluid rounded-full" src="img/me1.jpg" alt="">
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas canvas-custom offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="canvas-list mb-5">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Plants</a></li>
+                        <li><a href="">Vases</a></li>
+                        <li><a href="">Tools</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <ul class="canvas-socials">
+                        <li><a href=""><span class="fa-brands fa-light fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-x"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-instagram"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-whatsapp"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-tiktok"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-pop">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="searchModalLabel">Enter Keywords</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex" role="search">
+                                <input class="nav-search form-control me-2" type="search" placeholder="Search ..." aria-label="Search">
+                                <span class="search-icon mr-2">
+                                    <i class="fa fa-light fa-search"></i>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel owl-theme">
+                    <div class="slide-object">
+                        <a href="product.html"><img class="img-fluid" src="img/plant (5).jpg" alt=""></a>
+                        <div class="object-desc">
+                            <div class="object-badge">
+                                <span class="px-2 py-1">In Stock</span>
+                                <span class="px-2 py-1">Sale</span>
+                            </div>
+                            <h4><a href="product.html">Hanging leaves</a></h4>
+                            <div class="object-meta">
+                                <span>k6000</span>
+                                <span class="meta-off"><s>k9000</s></span>
+                            </div>
+                            <button class="object-cart py-2 px-3"><a href="cart.html">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button class="object-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span></a></button>
+                        </div>
+                    </div>
+                    <div class="slide-object">
+                        <a href="product.html"><img class="img-fluid" src="img/vase (6).jpg" alt=""></a>
+                        <div class="object-desc">
+                            <div class="object-badge">
+                                <span class="px-2 py-1">In Stock</span>
+                                <span class="px-2 py-1">Sale</span>
+                            </div>
+                            <h4><a href="product.html">Nice vase</a></h4>
+                            <div class="object-meta">
+                                <span>k6000</span>
+                                <span class="meta-off"><s>k9000</s></span>
+                            </div>
+                            <button class="object-cart py-2 px-3"><a href="cart.html">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button class="object-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span></a></button>
+                        </div>
+                    </div>
+                    <div class="slide-object">
+                        <a href="product.html"><img class="img-fluid" src="img/tool (3).jpg" alt=""></a>
+                        <div class="object-desc">
+                            <div class="object-badge">
+                                <span class="px-2 py-1">In Stock</span>
+                                <span class="px-2 py-1">Sale</span>
+                            </div>
+                            <h4><a href="product.html">Handy Tool</a></h4>
+                            <div class="object-meta">
+                                <span>k6000</span>
+                                <span class="meta-off"><s>k9000</s></span>
+                            </div>
+                            <button class="object-cart py-2 px-3"><a href="cart.html">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button class="object-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span></a></button>
+                        </div>
+                    </div>
+                    <div class="slide-object">
+                        <a href="product.html"><img class="img-fluid" src="img/plant (8).jpg" alt=""></a>
+                        <div class="object-desc">
+                            <div class="object-badge">
+                                <span class="px-2 py-1">In Stock</span>
+                                <span class="px-2 py-1">Sale</span>
+                            </div>
+                            <h4><a href="product.html">Hanging leaves</a></h4>
+                            <div class="object-meta">
+                                <span>k6000</span>
+                                <span class="meta-off"><s>k9000</s></span>
+                            </div>
+                            <button class="object-cart py-2 px-3"><a href="cart.html">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button class="object-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span></a></button>
+                        </div>
+                    </div>
+                    <div class="slide-object">
+                        <a href="product.html"><img class="img-fluid" src="img/plant (9).jpg" alt=""></a>
+                        <div class="object-desc">
+                            <div class="object-badge">
+                                <span class="px-2 py-1">In Stock</span>
+                                <span class="px-2 py-1">Sale</span>
+                            </div>
+                            <h4><a href="product.html">Hanging leaves</a></h4>
+                            <div class="object-meta">
+                                <span>k6000</span>
+                                <span class="meta-off"><s>k9000</s></span>
+                            </div>
+                            <button class="object-cart py-2 px-3"><a href="cart.html">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button class="object-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row product-row">
+                    <span class="title">Plants <span class="fa fa-light fa-leaf"></span></span>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/plant (1).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Floral plant</a></h4>
+                            <div class="desc-meta">
+                                <span>k10,000</span>
+                                <span class="meta-off"><s>k12000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/plant (4).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Floral plant</a></h4>
+                            <div class="desc-meta">
+                                <span>k10,000</span>
+                                <span class="meta-off"><s>k12000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/plant (3).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Floral plant</a></h4>
+                            <div class="desc-meta">
+                                <span>k10,000</span>
+                                <span class="meta-off"><s>k12000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-row">
+                    <span class="title">Vase <span class="fa fa-light fa-jar"></span></span>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/vase (1).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Cute Vase</a></h4>
+                            <div class="desc-meta">
+                                <span>k3,000</span>
+                                <span class="meta-off"><s>k5000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/vase (4).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Cute Vase</a></h4>
+                            <div class="desc-meta">
+                                <span>k3,000</span>
+                                <span class="meta-off"><s>k5000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/vase (7).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Cute Vase</a></h4>
+                            <div class="desc-meta">
+                                <span>k3,000</span>
+                                <span class="meta-off"><s>k5000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-row">
+                    <span class="title">Garden tools <span class="fa fa-light fa-screwdriver-wrench"></span></span>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/tool (1).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Handy garden tool</a></h4>
+                            <div class="desc-meta">
+                                <span>k3,000</span>
+                                <span class="meta-off"><s>k5000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/tool (4).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Handy garden tool</a></h4>
+                            <div class="desc-meta">
+                                <span>k3,000</span>
+                                <span class="meta-off"><s>k5000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product">
+                        <a href="product.html"><img class="img-fluid product" src="img/tool (3).jpg" alt=""></a>
+                        <div class="prod-badge">
+                            <span class="px-2 py-1">In stock</span>
+                            <span class="px-2 py-1 ">Sale</span>
+                        </div>
+                        <div class="prod-desc">
+                            <h4><a href="">Handy garden tool</a></h4>
+                            <div class="desc-meta">
+                                <span>k7,000</span>
+                                <span class="meta-off"><s>k10000</s></span>
+                            </div>
+                            <button type="button" class="desc-cart py-2 px-3"><a href="">Add to cart <span class="fa fa-light fa-shopping-cart"></span></a></button>
+                            <button type="button" class="desc-save py-2 px-3"><a href="save.html">Save <span class="fa fa-light fa-heart"></span> </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <span class="title">My cart <span class="fa fa-light fa-shopping-cart"></span></span>
+                    <div class="col-md-12 side-row">
+                        <p>
+                            Once you start shopping your products will appear here.
+                        </p>
+                    </div>
+                    <span class="title">Saved <span class="fa fa-light fa-heart"></span></span>
+                    <div class="col-md-12 side-row">
+                        <p>
+                            Your saved products will appear here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 footer-brand">
+                    <h4><a href="index.html">Floral <span class="fa fa-light fa-leaf"></span></a></h4>
+                    <p>With love from us to you.</p>
+                    <ul class="brand-social list-unstyled">
+                        <li><a href=""><span class="fa-brands fa-light fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-x"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-instagram"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-whatsapp"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-tiktok"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 footer-info">
+                    <ul class="info-list list-unstyled">
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 copyright">
+                    <p>Gabriel Munthali <span class="fa fa-light fa-gear fa-spin"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

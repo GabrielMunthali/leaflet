@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral | Checkout</title>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Floral <span class="fa fa-light fa-leaf"></span></a>
+                    <div class="d-lg-none d-flex align-items-center gap-3">
+                        <div class="d-lg-none mob-util d-flex justify-content-end gap-3">
+                            <span class="" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                <i class="fa fa-light fa-search"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-light fa-bell"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-light fa-shopping-cart"></i>
+                            </span>
+                            <span class="mob-icon">
+                                <img class="img-fluid img-rounded thumbnail" src="img/usr.png" alt="">
+                            </span>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span class="fa-solid fa-ellipsis-vertical"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Plants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Vases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tools</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav-util d-flex items-center gap-2">
+                            <form class="d-flex" role="search">
+                                <input class="nav-search form-control me-2" type="search" placeholder="Search ..."
+                                    aria-label="Search">
+                                <span class="search-icon mr-2">
+                                    <i class="fa fa-light fa-search"></i>
+                                </span>
+                            </form>
+                            <button class="rounded-full nav-note">
+                                <span class="fa fa-light fa-bell"></span>
+                            </button>
+                            <button class="nav-cart">
+                                <span class="fa fa-light fa-shopping-cart"></span>
+                            </button>
+                            <button class="rounded-full user-icon">
+                                <img class="img-fluid rounded-full" src="img/me1.jpg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas canvas-custom offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="canvas-list mb-5">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Plants</a></li>
+                        <li><a href="">Vases</a></li>
+                        <li><a href="">Tools</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <ul class="canvas-socials">
+                        <li><a href=""><span class="fa-brands fa-light fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-x"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-instagram"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-whatsapp"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-tiktok"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-pop">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="searchModalLabel">Enter Keywords</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex" role="search">
+                                <input class="nav-search form-control me-2" type="search" placeholder="Search ..."
+                                    aria-label="Search">
+                                <span class="search-icon mr-2">
+                                    <i class="fa fa-light fa-search"></i>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <div class="row">
+                    <span class="title">Checkout <span class="fa fa-light fa-shopping-bag"></span></span>
+                    <div class="col-md-12 ">
+                        <div class="dp">
+                            <div class="orders">
+                                <div class="order d-flex gap-4">
+                                    <a href="product.html" class="order-image-link">
+                                        <img class="img-fluid order-image" src="img/plant (3).jpg" alt="Fine Plant">
+                                    </a>
+                                    <div class="order-desc flex-grow-1">
+                                        <div class="d-flex justify-content-between order-header">
+                                            <h4 class="order-title"><a href="product.html" class="order-title-link">Fine Plant</a></h4>
+                                            <span class="order-price">K2000</span>
+                                        </div>
+                                        <div class="d-flex gap-4 order-details">
+                                            <span class="order-size">Size: S</span>
+                                            <span class="order-color">Color: Green</span>
+                                            <span class="order-quantity">Qty: 1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between order-sub">
+                                <ul class="order-sum list-unstyled">
+                                    <li>Sub Total</li>
+                                    <li>Delivery</li>
+                                </ul>
+                                <ul class="order-sum list-unstyled">
+                                    <li>K2000</li>
+                                    <li>K0.00</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-between order-total">
+                                <span>Total</span>
+                                <span>K2000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <span class="title">Delivery & Payment <span class="fa fa-light fa-money-check-dollar"></span></span>
+                    <div class="col-md-12">
+                        <div class="dp">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="dp-label" for="First Name">First Name</label>
+                                        <input type="text" class="form-control dp-form" placeholder="e.g Katana" aria-label="First Name">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="dp-label" for="Last Name">First Name</label>
+                                        <input type="text" class="form-control dp-form" placeholder="e.g Gabby" aria-label="Last Name">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="dp-label" for="email">E-Mail</label>
+                                        <input type="email" class="form-control dp-form" placeholder="e.g gabmunthali@gmail.com" aria-label="Email">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="dp-label" for="phone">Phone</label>
+                                        <input type="tel" class="form-control dp-form" placeholder="e.g 0993996717">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="dp-label" for="address">Address</label>
+                                        <textarea name="address" class="form-control dp-text" id=""></textarea>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="dp-label" for="Card Number">Card Number</label>
+                                        <input type="text" class="form-control dp-form" name="" placeholder="2111 2222 2222 2222">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="dp-label" for="Expiry">Expiry</label>
+                                        <input type="text" class="form-control dp-form" name="" placeholder="MM/YY">
+                                    </div>
+                                    <div class="col-4">
+                                        <label class="dp-label" for="CVC">CVC</label>
+                                        <input type="text" class="form-control dp-form" placeholder="123">
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="place-btn py-3 px-3">Place Order <span class="fa fa-solid fa-shopping-bag"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 footer-brand">
+                    <h4><a href="index.html">Floral <span class="fa fa-solid fa-leaf"></span></a></h4>
+                    <p>With love from us to you.</p>
+                    <ul class="brand-social list-unstyled">
+                        <li><a href=""><span class="fa-brands fa-light fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-x"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-instagram"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-whatsapp"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-tiktok"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 footer-info">
+                    <ul class="info-list list-unstyled">
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 copyright">
+                    <p>Gabriel Munthali <span class="fa fa-light fa-gear fa-spin"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
